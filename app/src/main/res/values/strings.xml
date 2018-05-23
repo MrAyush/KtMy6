@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">KtMy6</string>
+    <string name="login_name">Login Screen</string>
+    <string name="signup_name">Sign-up Screen</string>
+    <string-array name="gender">
+        <item>Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
 </resources>

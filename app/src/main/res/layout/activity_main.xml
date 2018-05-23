@@ -31,17 +31,20 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:paddingStart="25dp"
-                android:paddingEnd="0dp"
+                android:paddingEnd="15dp"
                 android:id="@+id/ll1">
                 <ImageView
                     android:id="@+id/iv2"
                     android:layout_width="wrap_content"
                     android:layout_height="46dp"
+                    android:contentDescription="@string/app_name"
                     android:src="@drawable/ic_action_name"
                     android:layout_weight=".1"/>
 
                 <EditText
                     android:id="@+id/et1"
+                    android:textColor="#fff"
+                    android:inputType="textWebEmailAddress"
                     android:layout_width="match_parent"
                     android:layout_weight=".9"
                     android:layout_height="wrap_content"
@@ -54,12 +57,13 @@
                 android:layout_below="@id/ll1"
                 android:orientation="horizontal"
                 android:paddingStart="25dp"
-                android:paddingEnd="0dp"
+                android:paddingEnd="15dp"
                 android:id="@+id/ll2">
                 <ImageView
                     android:id="@+id/iv3"
                     android:layout_width="wrap_content"
                     android:layout_height="46dp"
+                    android:contentDescription="@string/app_name"
                     android:src="@drawable/ic_action_pass"
                     android:layout_weight=".1"/>
 
@@ -67,6 +71,8 @@
                     android:id="@+id/et2"
                     android:layout_width="match_parent"
                     android:layout_weight=".9"
+                    android:textColor="#fff"
+                    android:inputType="textPassword"
                     android:layout_height="wrap_content"
                     android:hint="Password" />
             </LinearLayout>
@@ -79,6 +85,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/mybtn"
+            android:onClick="ClickEvent"
             android:textAllCaps="false"
             android:textColor="#fff"
             android:id="@+id/btn1"
@@ -87,9 +94,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Sign up"
+            android:onClick="ClickEvent"
             style="@style/Widget.AppCompat.Button.Borderless"
             android:textAllCaps="false"
             android:layout_below="@id/btn1"
+            android:id="@+id/btn2"
             android:layout_centerHorizontal="true"
             android:textColor="#fff"/>
     </RelativeLayout>
