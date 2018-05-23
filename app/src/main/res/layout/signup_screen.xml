@@ -33,6 +33,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_all_inclusive_black_24dp"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -40,7 +44,7 @@
             android:inputType="textWebEmailAddress"
             android:textColor="#fff"
             android:hint="Create username"
-            android:id="@+id/Set1"/>
+            android:id="@+id/set1"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -49,7 +53,7 @@
             android:textColor="#fff"
             android:inputType="textPassword"
             android:hint="Create password"
-            android:id="@+id/Set2"/>
+            android:id="@+id/set2"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -58,18 +62,21 @@
             android:textColor="#fff"
             android:inputType="textPassword"
             android:hint="Re-enter password"
-            android:id="@+id/Set3"/>
+            android:id="@+id/set3"/>
+
         <Spinner
+            android:id="@+id/gender"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
-            android:id="@+id/gender"
-            android:entries="@array/gender"/>
+            android:entries="@array/gender" />
         <Button
             android:layout_marginTop="15dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/mybtn"
+            android:id="@+id/Sbtn1"
+            android:textColor="#fff"
             android:textAllCaps="false"
             android:text="Sign up"/>
     </LinearLayout>
